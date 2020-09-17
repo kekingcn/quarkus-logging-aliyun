@@ -1,0 +1,132 @@
+# quarkus-logging-aliyun
+
+quarkus extension of [aliyun log](https://github.com/aliyun/aliyun-log-java-producer) platform
+
+## Quick start
+
+- 1、Introduce maven coordinates
+
+```
+        <dependency>
+            <groupId>org.github.keking</groupId>
+            <artifactId>quarkus-aliyunlog-ext</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+```
+
+- 2、Add the following configuration in the application.properties file
+
+```
+quarkus.log.aliyun=false
+quarkus.log.aliyun.topic=xx
+quarkus.log.aliyun.name=xx
+quarkus.log.aliyun.logstore=xx
+quarkus.log.aliyun.endpoint=xx
+quarkus.log.aliyun.access-key-id= = xx
+quarkus.log.aliyun.access-key-secret=xx
+quarkus.log.aliyun.user-agent=xx
+```
+
+## Configuration instructions
+
+[.configuration-legend]
+icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime
+[.configuration-reference.searchable,cols="80,.^10,.^10"]
+
+|===
+
+h|
+[[quarkus-log-aliyun_configuration]]link:#quarkus-log-aliyun_configuration[Configuration property]
+
+h|Type
+h|Default
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun]]`link:#quarkus-log-aliyun_quarkus.log.aliyun[quarkus.log.aliyun]`
+
+[.description]
+--
+是否开启阿里云日志
+--|boolean
+|`false`
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.level]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.level[quarkus.log.aliyun.level]`
+
+[.description]
+--
+日志级别
+--|link:https://docs.jboss.org/jbossas/javadoc/7.1.2.Final/org/jboss/logmanager/Level.html[Level]
+
+|`INFO`
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.name]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.name[quarkus.log.aliyun.name]`
+
+[.description]
+--
+项目名称
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.logstore]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.logstore[quarkus.log.aliyun.logstore]`
+
+[.description]
+--
+日志存储
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.endpoint]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.endpoint[quarkus.log.aliyun.endpoint]`
+
+[.description]
+--
+阿里云日志接口
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.access-key-id]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.access-key-id[quarkus.log.aliyun.access-key-id]`
+
+[.description]
+--
+阿里云日志accessKeyId
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.access-key-secret]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.access-key-secret[quarkus.log.aliyun.access-key-secret]`
+
+[.description]
+--
+阿里云日志accessKeySecret
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.user-agent]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.user-agent[quarkus.log.aliyun.user-agent]`
+
+[.description]
+--
+阿里云日志userAgent
+--|string
+|
+
+
+a|
+[[quarkus-log-aliyun_quarkus.log.aliyun.topic]]`link:#quarkus-log-aliyun_quarkus.log.aliyun.topic[quarkus.log.aliyun.topic]`
+
+[.description]
+--
+日志的topic
+--|string
+|
