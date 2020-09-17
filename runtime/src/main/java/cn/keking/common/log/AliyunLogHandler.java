@@ -84,7 +84,7 @@ public class AliyunLogHandler extends Handler {
         //
     }
 
-    public void start() {
+    private void start() {
         ProjectConfigs projectConfigs = new ProjectConfigs();
         ProjectConfig projectConfig = new ProjectConfig(
                 config.name.get(),
