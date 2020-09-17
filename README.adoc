@@ -1,6 +1,6 @@
 # quarkus-logging-aliyun
 
-quarkus extension of [aliyun log](https://github.com/aliyun/aliyun-log-java-producer) platform
+quarkus extension of https://github.com/aliyun/aliyun-log-java-producer[aliyun log] platform
 
 ## Quick start
 
